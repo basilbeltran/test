@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "hacking",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo demo.js:bundle.js --live",
+    "build": "browserify demo.js | uglifyjs -cm > bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "budo": "^11.5.0",
+    "uglify-js": "^3.4.9"
+  }
+}
